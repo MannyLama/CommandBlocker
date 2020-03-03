@@ -32,7 +32,7 @@ public class BukkitMethods implements MethodInterface {
 
 	@Override
 	public void sendMessage(Object player, String msg) {
-		if (msg != null){
+		if (msg != null || msg.length() != 0){
 			((CommandSender) player).sendMessage(msg);
 		}
 	}
